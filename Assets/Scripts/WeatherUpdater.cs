@@ -1,18 +1,23 @@
+using System;
+using ServerApi.Data;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class WeatherUpdater : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _cityName;
     [SerializeField] private TextMeshProUGUI _temperatureValue;
-    [SerializeField] private UnityEvent _updatingWeather = null;
 
-    public void UpdateWeatherInfo()
+    public event Action WeatherUpdate;
+    
+    public void UpdateWeatherInfo(WeatherData weather)
     {
-        _updatingWeather.Invoke();
-        
-        // _cityName.text = _weatherData.CityName;
-        // _temperatureValue.text = (_weatherData.Main.Temp - 273).ToString("F0");
+        _cityName.text = weather.CityName;
+        _temperatureValue.text = (weather.Main.Temp - 273).ToString("F0");
+    }
+
+    public void GetNewWeatherState()
+    {
+        WeatherUpdate?.Invoke();
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5885349287916744437}
   - component: {fileID: 5885349287916744434}
   m_Layer: 0
-  m_Name: JSONParser
+  m_Name: WeatherParse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,18 +43,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a82cf79a74d269944afe1c9bee55b076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isLoading:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Bootstrap, Assembly-CSharp
-        m_MethodName: LoadingScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2

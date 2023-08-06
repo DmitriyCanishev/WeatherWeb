@@ -6,9 +6,9 @@ namespace ServerApi
 {
     public class ServerApi : IServerApi
     {
-        private IHttpClient _httpClient = null;
+        private readonly IHttpClient _httpClient = null;
         
-        private const string BaseUrl = "api.openweathermap.org/data/2.5/weather?q=";
+        private const string BaseUrl = "api.openweathermap.org/data/2.5/weather?";
 
         public ServerApi(IHttpClient httpClient)
         {

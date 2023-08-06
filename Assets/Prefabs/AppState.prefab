@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5885349287916744437}
   - component: {fileID: 5885349287916744434}
   m_Layer: 0
-  m_Name: WeatherParse
+  m_Name: AppState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,6 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5885349287916744435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a82cf79a74d269944afe1c9bee55b076, type: 3}
+  m_Script: {fileID: 11500000, guid: 9539747a9bf842cb863adc5954798daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _weatherDataUrls: {fileID: 11400000, guid: ee9ba857bc6598c47868bcaddddd8621, type: 2}

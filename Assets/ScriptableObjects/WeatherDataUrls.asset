@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce328b373a641c6bb505baf39697ed7, type: 3}
+  m_Name: WeatherDataUrls
+  m_EditorClassIdentifier: 
+  <WeatherUrls>k__BackingField:
+  - <CityName>k__BackingField: Saint Petersburg
+    <CityUrl>k__BackingField: lat=59.9386&lon=30.3141&appid=6401b1c3fba71804f1de07a693053ca3
+  - <CityName>k__BackingField: Moscow
+    <CityUrl>k__BackingField: lat=55.7522&lon=37.6156&appid=6401b1c3fba71804f1de07a693053ca3
+  - <CityName>k__BackingField: "Timash\xEBvsk"
+    <CityUrl>k__BackingField: lat=45.6169&lon=38.9453&appid=6401b1c3fba71804f1de07a693053ca3
+  - <CityName>k__BackingField: Krasnodar
+    <CityUrl>k__BackingField: lat=45.0448&lon=38.976&appid=6401b1c3fba71804f1de07a693053ca3
+  - <CityName>k__BackingField: Kaliningrad
+    <CityUrl>k__BackingField: lat=54.70658&lon=20.511&appid=6401b1c3fba71804f1de07a693053ca3
+  - <CityName>k__BackingField: Sochi
+    <CityUrl>k__BackingField: lat=43.5992&lon=39.7257&appid=6401b1c3fba71804f1de07a693053ca3
+  - <CityName>k__BackingField: Arkhangelsk
+    <CityUrl>k__BackingField: lat=64.5401&lon=40.5433&appid=6401b1c3fba71804f1de07a693053ca3
+  - <CityName>k__BackingField: Kazan
+    <CityUrl>k__BackingField: lat=55.7887&lon=49.1221&appid=6401b1c3fba71804f1de07a693053ca3
+  - <CityName>k__BackingField: Novosibirsk
+    <CityUrl>k__BackingField: lat=55.0415&lon=82.9346&appid=6401b1c3fba71804f1de07a693053ca3

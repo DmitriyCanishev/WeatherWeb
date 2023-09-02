@@ -1065,7 +1065,7 @@ GameObject:
   - component: {fileID: 1419293654}
   - component: {fileID: 1419293653}
   m_Layer: 0
-  m_Name: WeatherParser
+  m_Name: WeatherRequester
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1080,10 +1080,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1419293652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0569900aafc41918a55e992052e2025, type: 3}
+  m_Script: {fileID: 11500000, guid: 175397b800bfee744a898e5b1fecdf6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dropDownHandler: {fileID: 2372480576747285770}
 --- !u!4 &1419293654
 Transform:
   m_ObjectHideFlags: 0
@@ -1182,8 +1181,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1419293653}
-        m_TargetAssemblyTypeName: WeatherParser, Assembly-CSharp
-        m_MethodName: LoadCityWeather
+        m_TargetAssemblyTypeName: View.Weather.WeatherRequester, Assembly-CSharp
+        m_MethodName: RequestCityWeather
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1501,7 +1500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1601db7054d71d4e8754a5dcd6172af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weatherParser: {fileID: 1419293653}
   _cityName: {fileID: 202201802}
   _temperatureValue: {fileID: 432981436}
 --- !u!4 &2116741436
@@ -1647,14 +1645,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dd7290ffa10e964ca277831d979a7c8, type: 3}
---- !u!114 &2372480576747285770 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2372480575912232295, guid: 7dd7290ffa10e964ca277831d979a7c8, type: 3}
-  m_PrefabInstance: {fileID: 2372480576747285769}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb3310f8ad9d4619a4454b96f14031d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -2,12 +2,10 @@ using ServerApi.Data;
 using TMPro;
 using UnityEngine;
 
-namespace Weather
+namespace View.Weather
 {
-    public class WeatherUpdater : MonoBehaviour
+    public class WeatherUpdater : ViewController
     {
-        [SerializeField, Space(3)] private WeatherParser _weatherParser = null;
-
         [SerializeField] private TextMeshProUGUI _cityName;
         [SerializeField] private TextMeshProUGUI _temperatureValue;
     
@@ -15,7 +13,7 @@ namespace Weather
 
         private void Awake()
         {
-            _weatherParser.WeatherUpdate += OnWeatherUpdate;
+            AppState.Weather.OnAfterUpdate += OnWeatherUpdate;
         }
 
         private void OnWeatherUpdate(WeatherData weather)
@@ -26,7 +24,7 @@ namespace Weather
     
         private void OnDestroy()
         {
-            _weatherParser.WeatherUpdate -= OnWeatherUpdate;
+            AppState.Weather.OnAfterUpdate -= OnWeatherUpdate;
         }
     }
 }
